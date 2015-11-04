@@ -4,7 +4,6 @@
 ## Imports
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy as sci
 import pylab as py
 
 ###### Defining functions in this section
@@ -37,7 +36,7 @@ def load_data(filename, value_number):
     return value1, value2, value3, value4
 
 ## fitting / extrapolating a curve
-def polynom_fit(x, y, deg=1, extrapolate=False):
+def polynom_fit(x, y, deg=1, extrapolate=[]):
 
     """
     x, y should be numpy arrays (floats)
@@ -56,6 +55,6 @@ def polynom_fit(x, y, deg=1, extrapolate=False):
     fitted_curve = np.poly1d(p)
 
     ## use extrapolate values if given
-    if(extrapolate): x = np.array(extrapolate)
+    if(len(extrapolate)): x = np.array(extrapolate)
 
     return fitted_curve(x), p
