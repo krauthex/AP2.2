@@ -42,7 +42,8 @@ def polynom_fit(x, y, deg=1, extrapolate=False):
     """
     x, y should be numpy arrays (floats)
     deg is the degree of the polynomial fit ( p(x) = p[0] * x**deg + p[1] * x**(deg-1) + ... + p[deg] )
-    returns the polynomial coefficients: p[0]...p[n]
+    extrapolate: specify an array of x values at which the fitted_curve shall be evaluated.
+    returns the the fitted_curve and the polynomial coefficients: p[0]...p[n]
     """
 
     x = np.array(x)
@@ -55,5 +56,6 @@ def polynom_fit(x, y, deg=1, extrapolate=False):
     fitted_curve = np.poly1d(p)
 
     ## use extrapolate values if given
+    if(extrapolate): x = np.array(extrapolate)
 
     return fitted_curve(x), p
