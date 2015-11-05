@@ -14,11 +14,10 @@ def load_data(filename):
     """
     filename is the name of the data files
     it is assumed, that the description in the data file is just one row
-    returns a list
+    returns a list of the columns as numpy arrays
     """
 
     filename = './' + str(filename)
-
     return [i for i in py.loadtxt(filename, unpack=True, skiprows=1)]
 
 ## fitting / extrapolating a curve
