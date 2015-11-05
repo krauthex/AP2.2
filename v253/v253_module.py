@@ -9,31 +9,17 @@ import pylab as py
 ###### Defining functions in this section
 
 ## load data from files
-def load_data(filename, value_number):
+def load_data(filename):
 
     """
     filename is the name of the data files
-    value_number is the amount of data columns in the data file (up to 4)
     it is assumed, that the description in the data file is just one row
+    returns a list
     """
 
     filename = './' + str(filename)
 
-    ## initialize the values
-    value1, value2, value3, value4 = 0,0,0,0
-
-    if(value_number == 2):
-        value1, value2 = py.loadtxt(filename, unpack=True, skiprows=1)
-
-    if(value_number == 3):
-        value1, value2, value3 = py.loadtxt(filename, unpack=True, skiprows=1)
-
-    if(value_number == 4):
-        value1, value2, value3, value4 = py.loadtxt(filename, unpack=True, skiprows=1)
-
-    else: print("!! wrong value input")
-
-    return value1, value2, value3, value4
+    return [i for i in py.loadtxt(filename, unpack=True, skiprows=1)]
 
 ## fitting / extrapolating a curve
 def polynom_fit(x, y, deg=1, extrapolate=[]):
