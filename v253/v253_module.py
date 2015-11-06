@@ -18,6 +18,7 @@ def load_data(filename):
     """
 
     filename = './' + str(filename)
+    ## returns every items in the data array as a list of items
     return [i for i in py.loadtxt(filename, unpack=True, skiprows=1)]
 
 ## fitting / extrapolating a curve
