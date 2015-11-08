@@ -1,4 +1,4 @@
-###### don't be an idiot, use Python3!
+###### Python3.*
 ###### this is a module to be used in experiment 253, AP2.2, Uni Heidelberg, 2015
 
 ## Imports
