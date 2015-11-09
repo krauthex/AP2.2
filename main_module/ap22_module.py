@@ -28,7 +28,7 @@ def polynom_fit(x, y, deg=1, extrapolate=[]):
     extrapolate: specify an array of x values at which the fitted_curve shall be evaluated.
     returns the the fitted_curve and the polynomial coefficients: p[0]...p[n]
     """
-    
+
     ## import numpy inside the function so it doesn't appear as a function for the module
     import numpy as np
 
@@ -45,3 +45,27 @@ def polynom_fit(x, y, deg=1, extrapolate=[]):
     if(len(extrapolate)): x = np.array(extrapolate)
 
     return fitted_curve(x), p
+
+## linear regression
+def lin_reg(x, y, sigma=None):
+    """
+    x, y should be numpy arrays (floats)
+    returns a linear fit to the data and the optimal values for the parameters and the estimated
+        covariance of the optimal parameters
+    """
+
+    ## import numpy inside the function so it doesn't appear as a function for the module
+    import numpy as np
+    from scipy.optimize import curve_fit
+
+    x = np.array(x)
+    y = np.array(y)
+
+    def lin_func(x, k, b):
+        return k * k + b
+
+    popt, pcov = curve_fit(lin_func, x, y, sigma=sigma)
+
+    fitted_y = popt[0]*x + popt[1]
+
+    return fitted_y, popt, pcov
