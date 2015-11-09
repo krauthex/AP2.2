@@ -61,8 +61,8 @@ def lin_reg(x, y, sigma=None):
     x = np.array(x)
     y = np.array(y)
 
-    def lin_func(x, k, b):
-        return k * k + b
+    def lin_func(x, k, d):
+        return k * x + d
 
     popt, pcov = curve_fit(lin_func, x, y, sigma=sigma)
 
