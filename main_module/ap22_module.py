@@ -1,10 +1,6 @@
 ###### Python3.*
 ###### this is a module to be used in experiment 253, AP2.2, Uni Heidelberg, 2015
-
-## Imports
-import numpy as np
-import matplotlib.pyplot as plt
-import pylab as py
+###### all the imports take place in the notebooks 
 
 ###### Defining functions in this section
 
