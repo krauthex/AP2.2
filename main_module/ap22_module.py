@@ -1,6 +1,6 @@
 ###### Python3.*
 ###### this is a module to be used in experiment 253, AP2.2, Uni Heidelberg, 2015
-###### all the imports take place in the notebooks 
+###### all the imports take place in the notebooks
 
 ###### Defining functions in this section
 
@@ -12,6 +12,8 @@ def load_data(filename):
     it is assumed, that the description in the data file is just one row
     returns a list of the columns as numpy arrays
     """
+    ## import pylab inside the function so that it doesn't appear as a function for the module
+    import pylab as py
 
     filename = './' + str(filename)
     ## returns every items in the data array as a list of items
@@ -26,6 +28,9 @@ def polynom_fit(x, y, deg=1, extrapolate=[]):
     extrapolate: specify an array of x values at which the fitted_curve shall be evaluated.
     returns the the fitted_curve and the polynomial coefficients: p[0]...p[n]
     """
+    
+    ## import numpy inside the function so it doesn't appear as a function for the module
+    import numpy as np
 
     x = np.array(x)
     y = np.array(y)
