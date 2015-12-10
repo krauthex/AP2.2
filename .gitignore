@@ -1,27 +1,21 @@
 # this file lists all directories/files that should be ignored
-# mainly data files, because that's my data! ;)
 
 ## for v253
-v253/.data
 v253/.ipynb_checkpoints
 v253/__pycache__
 
 ## for v255
-v255/.data
 v255/.ipynb_checkpoints
 v255/__pycache__
 
 ## for v256
-v256/.data
 v256/.ipynb_checkpoints
 v256/__pycache__
 
 ## for v241
-v241/.data
 v241/.ipynb_checkpoints
 v241/__pycache__
 
 ## for v243
-v243/.data
 v243/.ipynb_checkpoints
 v243/__pycache__
