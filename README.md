@@ -7,7 +7,10 @@ If you don't understand what a function does or what my script does, feel free t
 Also, new implementations may also be included, if you tell me what you want.
 (Keep in mind that I'm quite busy with $stuff, so adding other features might take some time)
 
-# Contents
-Experiment 253:
-  - reading data from a txt file (or any other ascii file with data in columns)
-  - fitting a polynomial function to the data (also useful for extrapolation)
+# List of finished experiments:
+-241
+-243
+-253
+-255
+-256
+
