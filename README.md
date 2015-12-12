@@ -9,8 +9,10 @@ Also, new implementations may also be included, if you tell me what you want.
 
 # List of finished experiments:
 - Experiment 241
-- Experiment 243
 - Experiment 253
 - Experimet 255
 - Experiment 256
 
+# Work in progress
+- Experiment 242
+- Experimet 243
