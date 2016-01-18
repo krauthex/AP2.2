@@ -7,12 +7,15 @@ If you don't understand what a function does or what my script does, feel free t
 Also, new implementations may also be included, if you tell me what you want.
 (Keep in mind that I'm quite busy with $stuff, so adding other features might take some time)
 
-# List of finished experiments:
+# List of finished experiments (full AP2.2):
 - Experiment 241
 - Experiment 242
+- Experiment 243
+- Experiment 245
+- Experiment 251
 - Experiment 253
 - Experiment 255
 - Experiment 256
 
 # Work in progress
-- Experiment 243
+all done.
