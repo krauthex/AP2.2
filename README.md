@@ -1,5 +1,5 @@
 # AP2.2
-a collection of python scripts and functions for the "Anfängerpraktikum 2.2" at Uni Heidelberg. 
+a collection of ipython3 notebooks for the "Anfängerpraktikum 2.2" at Uni Heidelberg. 
 No guarantee on any results though!
 
 I'm trying to follow the basic python coding guidelines.
